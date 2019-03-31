@@ -24,10 +24,9 @@ package main
 import (
 	"context"
 	"log"
+  "net"
   "net/http"
-
 	"google.golang.org/grpc"
-	api_pb "./proto"
   "google.golang.org/grpc/grpclog"
   "github.com/improbable-eng/grpc-web/go/grpcweb"
   "github.com/go-chi/cors"
