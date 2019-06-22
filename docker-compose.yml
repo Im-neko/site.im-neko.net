@@ -7,33 +7,31 @@ services:
       dockerfile: front/Dockerfile
     ports:
       - "$FRONT_PORT:8080"
-    volumes:
-      - ./:/src
     restart: always
 
-  api:
-    build:
-      context: .
-      dockerfile: "$API_DOCKER_FILE"
-    container_name: api
-    links:
-      - mysql
-    ports:
-      - "$API_PORT:3000"
-    volumes:
-      - ./api:/go/src/app
-    restart: always
-
-  mysql:
-    image: mysql:latest
-    ports:
-      - "$DB_PORT:3306"
-    environment:
-      MYSQL_ROOT_PASSWORD: "$MYSQL_ROOT_PASS"
-      MYSQL_DATABASE: "$MYSQL_DATABASE"
-      MYSQL_USER: "$MYSQL_USER"
-      MYSQL_PASSWORD: "$MYSQL_PASS"
-    volumes:
-      - ./data/db:/var/lib/mysql
-      - ./mysql/init:/docker-entrypoint-initdb.d
-    restart: always
+  # api:
+  #   build:
+  #     context: .
+  #     dockerfile: "$API_DOCKER_FILE"
+  #   container_name: api
+  #   links:
+  #     - mysql
+  #   ports:
+  #     - "$API_PORT:3000"
+  #   volumes:
+  #     - ./api:/go/src/app
+  #   restart: always
+  #
+  # mysql:
+  #   image: mysql:latest
+  #   ports:
+  #     - "$DB_PORT:3306"
+  #   environment:
+  #     MYSQL_ROOT_PASSWORD: "$MYSQL_ROOT_PASS"
+  #     MYSQL_DATABASE: "$MYSQL_DATABASE"
+  #     MYSQL_USER: "$MYSQL_USER"
+  #     MYSQL_PASSWORD: "$MYSQL_PASS"
+  #   volumes:
+  #     - ./data/db:/var/lib/mysql
+  #     - ./mysql/init:/docker-entrypoint-initdb.d
+  #   restart: always
