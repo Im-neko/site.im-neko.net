@@ -1,7 +1,5 @@
 FROM node:9.8.0
 
-ARG $FRONT_PORT
-
 WORKDIR /src
 
 COPY ./front /src
