@@ -14,7 +14,7 @@
     "webpack": "^4.29.6"
   },
   "scripts": {
-    "dev": "next -p 2000",
+    "dev": "next",
     "build": "next build",
     "start": "next start -p 8080",
     "tslint": "tslint -c tslint.json -p tsconfig.json"

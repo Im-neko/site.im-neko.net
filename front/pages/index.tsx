@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Header from '../component/Header';
 import Accounts from '../component/Accounts';
 import Description from '../component/Description';
+import Links from '../component/Links';
 
 
 export default class Main extends Component<IProps> {   
@@ -14,6 +15,7 @@ export default class Main extends Component<IProps> {
           <Header />
           <Accounts />
           <Description />
+          <Links />
         </center>
       </div>
     );
