@@ -8,7 +8,7 @@ export default class Accounts extends Component<IProps> {
       <div className="siimple-alert siimple-alert--green">
         [Portfolio的なやつ]
       </div>
-      <a href="https://site.im-neko.net">ねこの部屋 - Blog</a>
+      <a href="https://im-neko.net">ねこの部屋 - Blog</a>
       <a href="https://www.resume.id/neko">resume</a>
       <br />
       <a href="https://portfolio.forkwell.com/@Im-neko">forkwell</a> 
