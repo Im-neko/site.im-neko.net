@@ -6,7 +6,7 @@ export default class Header extends Component<IProps> {
     return (
     <div id="header">
       <div className="siimple-box siimple-box--green">
-        <h1>Welcom to Neko House!</h1>
+        <h1>Welcom to Neko Page!</h1>
       </div>
     </div>
     )
