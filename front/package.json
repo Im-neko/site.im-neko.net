@@ -8,15 +8,17 @@
     "dotenv-webpack": "^1.7.0",
     "next": "^8.0.3",
     "react": "^16.8.5",
+    "react-adsense": "^0.1.0",
     "react-dom": "^16.8.5",
     "styled-components": "^3.4.10",
+    "ts-node": "^8.3.0",
     "typescript": "^3.0.1",
     "webpack": "^4.29.6"
   },
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start -p 8080",
+    "start": "cross-env NODE_ENV=prod ts-node server.ts",
     "tslint": "tslint -c tslint.json -p tsconfig.json"
   },
   "devDependencies": {
@@ -24,6 +26,7 @@
     "@types/next": "^6.1.4",
     "@types/react": "^16.7.7",
     "@types/react-dom": "^16.0.10",
+    "cross-env": "^5.2.0",
     "tslint": "^5.9.1",
     "tslint-config-standard": "^8.0.1",
     "tslint-loader": "^3.5.3",
