@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: front/Dockerfile
     ports:
-      - "$FRONT_PORT:8080"
+      - "$FRONT_PORT:3000"
     restart: always
 
   # api:
