@@ -32,6 +32,13 @@ export default class MyDocument extends Document {
           <meta name="twitter:description" content="neko Page" />
           <meta name="twitter:image" content="https://im-neko.net/mei-pika-icon.jpg" />
           <title>neko Page</title>
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-3933354234319712",
+              enable_page_level_ads: true
+            });
+         </script>
 
         </Head>
         <body>
